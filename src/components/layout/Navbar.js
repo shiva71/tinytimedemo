@@ -4,8 +4,12 @@ import PropTypes from 'prop-types';
 
 const Navbar = ({ title, icon }) => {
   return (
-    <nav className='navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3 mb-5 bg-white rounded'>
-      <Link className='navbar-brand mb-0 h1' style={{ color: '#4c0080' }}>
+    <nav className='navbar navbar-expand-lg navbar-light bg-white shadow-sm p-3 mb-4 bg-white rounded'>
+      <Link
+        className='navbar-brand mb-0 h1'
+        style={{ color: '#4c0080' }}
+        to='/'
+      >
         <i className={icon} /> {title}
       </Link>
       <button
@@ -22,17 +26,17 @@ const Navbar = ({ title, icon }) => {
       <div className='collapse navbar-collapse' id='navbarNav'>
         <ul className='navbar-nav'>
           <li className='nav-item active'>
-            <Link className='nav-link' to='#'>
+            <Link className='nav-link' to='/'>
               Dashboard <span className='sr-only'>(current)</span>
             </Link>
           </li>
           <li className='nav-item'>
-            <Link className='nav-link' to='#'>
-              Project
+            <Link className='nav-link' to='/projects'>
+              Projects
             </Link>
           </li>
           <li className='nav-item'>
-            <Link className='nav-link' to='#'>
+            <Link className='nav-link' to='/settings'>
               Settings
             </Link>
           </li>

@@ -1,0 +1,13 @@
+export const ADD_USER = 'ADD_USER';
+export const GET_USER = 'GET_USER';
+export const DELETE_USER = 'DELETE_USER';
+export const ADD_PROJECT = 'ADD_PROJECT';
+export const GET_PROJECTS = 'GET_PROJECTS';
+export const DELETE_PROJECT_ = 'DELETE_PROJECT';
+export const ADD_PROJECT_FLOW = 'ADD_PROJECT_FLOW';
+export const UPDATE_PROJECT_FLOW = 'UPDATE_PROJECT_FLOW';
+export const DELETE_PROJECT_FLOW = 'DELETE_PROJECT_FLOW';
+export const SET_CURRENT = 'SET_CURRENT';
+export const CLEAR_CURRENT = 'CLEAR_CURRENT';
+export const SET_LOADING = 'SET_LOADING';
+export const CLEAR_LOADING = 'CLEAR_LOADING';
