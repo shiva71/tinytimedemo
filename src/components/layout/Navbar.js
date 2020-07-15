@@ -40,6 +40,16 @@ const Navbar = ({ title, icon }) => {
               Settings
             </Link>
           </li>
+          <li className='nav-item'>
+            <Link className='nav-link' to='/login'>
+              Signin
+            </Link>
+          </li>
+          <li className='nav-item'>
+            <Link className='nav-link' to='/register'>
+              Register
+            </Link>
+          </li>
         </ul>
         <ul className='nav navbar-nav ml-auto'>
           <i className='far fa-user-circle' />
