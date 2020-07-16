@@ -35,6 +35,7 @@ const App = () => {
           <Route exact path='/login' component={Login}></Route>
           <Route exact path='/register' component={Register}></Route>
         </Switch>
+
         <AddProjectModal />
         <ResetDataModal />
         <FloatModal />
