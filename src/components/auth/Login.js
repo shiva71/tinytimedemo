@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link, useHistory } from 'react-router-dom';
 
 const Login = () => {
+  let history = useHistory();
   return (
     <div className='container '>
       <div className='row mt-5'>
@@ -80,7 +82,14 @@ const Login = () => {
             <a href='#!'>Forgot Your password</a>
             <p>
               {' '}
-              Not Tiny Time Account Yet?<a href='/register'>Create one now</a>
+              Not Tiny Time Account Yet?
+              <Link
+                onClick={() => {
+                  history.push('/register');
+                }}
+              >
+                Create one now
+              </Link>
             </p>
           </div>
         </div>

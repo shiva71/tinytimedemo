@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 const Register = () => {
+  let history = useHistory();
   return (
     <div className='container '>
       <div className='row mt-5'>
@@ -97,7 +98,14 @@ const Register = () => {
 
             <p>
               {' '}
-              Already have an account?<Link to='/login'>Login</Link>
+              Already have an account?
+              <Link
+                onClick={() => {
+                  history.push('/login');
+                }}
+              >
+                Login
+              </Link>
             </p>
           </div>
         </div>
